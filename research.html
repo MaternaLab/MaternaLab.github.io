@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research | Materna Lab</title>
+  <meta name="description" content="Research in the Materna Lab at UC Merced focuses on developmental and systems biology using zebrafish to understand gene regulation, cell behavior, and morphogenesis.">
+
+  <style>
+    :root {
+      --background: #ffffff;
+      --text: #222222;
+      --muted: #666666;
+      --line: #e6e6e6;
+      --soft-line: #f2f2f2;
+      --accent: #b38b00;
+      --accent-dark: #806400;
+      --max-width: 1120px;
+      --content-width: 720px;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--accent-dark);
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.16em;
+    }
+
+    a:hover, a:focus { color: var(--accent); }
+
+    .wrap {
+      width: min(100% - 2rem, var(--max-width));
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: #ffffff;
+    }
+
+    .site-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 2rem 0 1.5rem;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-family: "Avenir Next", Avenir, "Segoe UI", var(--font-sans);
+      font-size: clamp(2.3rem, 5vw, 4rem);
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+
+    .brand p {
+      margin: 0.45rem 0 0;
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      color: var(--text);
+      padding-bottom: 0.25rem;
+      border-bottom: 2px solid transparent;
+      text-decoration: none;
+    }
+
+    nav a:hover, nav a:focus {
+      color: var(--accent-dark);
+      border-bottom-color: var(--accent);
+      text-decoration: none;
+    }
+
+    .eyebrow, .section-label {
+      margin: 0 0 0.75rem;
+      color: var(--accent-dark);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.4rem, 7vw, 4rem);
+      line-height: 0.98;
+      letter-spacing: -0.06em;
+    }
+
+    .intro {
+      margin: 1.5rem 0 0;
+      color: var(--muted);
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      line-height: 1.55;
+    }
+
+    main {
+      width: min(100% - 2rem, var(--content-width));
+      margin: 0 auto;
+      padding: 0 0 4.5rem;
+    }
+
+    section {
+      padding: 3rem 0;
+      border-top: 1px solid var(--line);
+    }
+
+    section:first-of-type { border-top: 0; }
+
+    h2 {
+      margin: 0 0 1.15rem;
+      font-size: clamp(1.7rem, 3vw, 2.45rem);
+      line-height: 1.12;
+      letter-spacing: -0.035em;
+    }
+
+    h3 {
+      margin: 2rem 0 0.5rem;
+      font-size: 1.12rem;
+      line-height: 1.3;
+    }
+
+    p { margin: 0 0 1.1rem; }
+
+    figure {
+      margin: 2rem 0;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    figcaption {
+      margin-top: 0.7rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.45;
+    }
+
+    .research-list {
+      margin-top: 1.5rem;
+    }
+
+    .research-card {
+      margin: 0 0 1.6rem;
+    }
+
+    .research-card h3 { margin-top: 0; }
+    .research-card p:last-child { margin-bottom: 0; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding: 1.5rem 0 2.5rem;
+      text-align: center;
+    }
+
+    footer .wrap {
+      width: min(100% - 2rem, var(--max-width));
+    }
+
+    @media (max-width: 850px) {
+      .site-header {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      nav ul { justify-content: flex-start; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap site-header">
+      <div class="brand">
+        <h1>Materna Lab</h1>
+        <p>Developmental &amp; Systems Biology</p>
+      </div>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="team.html">People</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+<section aria-labelledby="overview-heading" id="overview">
+
+<h2>How cells organize themselves into tissues.</h2>
+<p class="intro">We study how regulatory programs control morphogenesis, using the zebrafish <em>sox17</em> lineage to connect gene regulation, cell behavior, and embryonic patterning.</p>
+<figure>
+<img alt="Materna lab zebrafish research image" src="https://maternalaborg.wordpress.com/wp-content/uploads/2021/06/woo_materna_lab_20210429-8.jpg"/>
+</figure>
+<p class="section-label">Overview</p>
+<h2 id="overview-heading">From regulatory proteins to morphogenesis</h2>
+<p>How cells are specified in an embryo is an old question in developmental biology. The field now has a good conceptional understanding of basic patterning processes, e.g., how a uniform group of cells splits into two with diverging fates. Such processes are under the control of <em>regulatory proteins</em>—transcription factors and signaling molecules—that execute the regulatory logic encoded in the genome.</p>
+<p>But how do a few regulatory proteins control the intricate processes that organize cells into more complex arrangements? Rearranging cells in space results in morphogenesis, the shaping of the embryo. Although the core pathways that underly morphogenesis are deeply conserved, understanding their precise control remains a daunting challenge. Indeed, how do a few regulatory proteins control a precise program of many, often dozens or hundreds of genes?</p>
+<p>Single cell RNA sequencing technology has enabled unprecedented resolution in discovering the diversity of transcriptional states and responses over the course of animal development. Simultaneously, advancements in microscopy enable detailed investigation of dynamic processes at the level of single molecules to whole tissues. We combine these technologies to understand the control of morphogenesis using the zebrafish <em>sox17</em> lineage as a model.</p>
+</section>
+<section aria-labelledby="model-heading" id="model">
+<p class="section-label">Model system</p>
+<h2 id="model-heading">The zebrafish <em>sox17</em> lineage</h2>
+<p>The zebrafish <em>sox17</em> lineage consists of endoderm and dorsal forerunner cells (DFCs), which are both specified in response to Nodal signaling prior to gastrulation. Initially, endoderm and DFCs express similar gene sets, including many lineage-determining transcription factors. But despite these similarities, their morphogenetic behavior quickly diverges. Endoderm cells ingress and disperse as individual cells before converging on the midline. Here they will form the epithelial layers of, among others, the gut and respiratory tracts. In contrast, DFCs remain pseudo-epithelial, migrate as a group, and form the ciliated epithelium of Kupffer’s Vesicle (KV), the organ of asymmetry.</p>
+<figure>
+<img alt="Schematic of endoderm and dorsal forerunner cell migration during early zebrafish development" src="https://maternalaborg.wordpress.com/wp-content/uploads/2024/08/endo-schematic-4web.png?w=788"/>
+<figcaption>Endoderm and dorsal forerunner cell migration during early zebrafish development.</figcaption>
+</figure>
+</section>
+<section aria-labelledby="questions-heading" id="questions">
+<p class="section-label">Research areas</p>
+<h2 id="questions-heading">Questions we pursue</h2>
+<p>The approaches in our lab span multiple scales, from understanding regulation of individual genes to perturbing signaling systems that affect the embryo wholesale. Here are some areas where we concentrate our efforts:</p>
+<div class="research-list">
+<article class="research-card">
+<h3>Control of endoderm migration</h3><p>How do endodermal cells switch from dispersal to convergence to epithelium formation? What determines their motility, directionality, and adhesion?</p><p>Our recent work identifies the receptor tyrosine kinase Met as a key regulator of zebrafish endoderm convergence. We show that Met promotes directional migration and migratory persistence during endoderm morphogenesis. Check out our <a href="https://www.biorxiv.org/content/10.64898/2026.05.01.722050v1">preprint on bioRxiv</a>.</p><h3>Patterning of endoderm</h3>
+<p>Migrating endoderm is highly heterogenous. We have found that there are several subtypes of endoderm that may constitute true lineages. We are interested in the molecular mechanisms underlying this divergence as well as what this divergence means for cell fate and morphogenetic behavior.</p>
+</article>
+<article class="research-card">
+<h3>Morphogenesis of Kupffer’s Vesicle</h3>
+<p>DFCs follow a canonical morphogenetic program to turn into KV, which includes migration, polarization, inflation, and eventually the extrusion of cilia. We have identified new genes that are important for proper KV formation and function. Among these is the <em>syne1b</em> gene that encodes a giant nesprin. As might be expected, loss of Nesprin1 function causes L/R defects in zebrafish.</p>
+</article>
+</div>
+<figure>
+<img alt="Schematic of endoderm and its adult derivatives" src="https://maternalaborg.wordpress.com/wp-content/uploads/2024/08/endoderm-fates.jpg?w=1024"/>
+<figcaption>From germ layer to organ system(s): a schematic of endoderm and (most of) its derivatives in the adult. Drawing by Baldemar Motomochi Cedillo.</figcaption>
+</figure>
+</section>
+<section aria-labelledby="tools-heading" id="tools">
+<p class="section-label">Technology</p>
+<h2 id="tools-heading">New tools for new questions</h2>
+<p>We are always engaged in developing new or implementing existing technology to aid our research. This includes:</p>
+<div class="research-list">
+<article class="research-card">
+<h3>Parallel reporter assays for discovery and analysis of gene regulatory modules</h3>
+<p>The genetic information is identical in all cells, yet cells use this information differentially. This is a direct consequence of transcriptional control, which is executed by gene regulatory modules—non-coding regions of the DNA that are associated with nearby genes. Gene regulatory modules are traditionally characterized in reporter assays that involve the generation of transgenic animals—a slow and tedious process. We have implemented a parallel reporter assay for use in zebrafish. This system was used in a <a href="https://pubmed.ncbi.nlm.nih.gov/38019918/">recent study</a> to test hundreds of candidate gene regulatory modules in the discovery of a regeneration-responsive enhancer. Current efforts in the lab are aimed at taking this technology to the next level.</p>
+</article>
+<article class="research-card">
+<h3>Tissue-specific and endogenous protein labeling with split fluorescent proteins</h3>
+<p>Seeing is believing. Arguably, one of the biggest advances in biology was the adaptation of fluorescent proteins as a tool. Fluorescent proteins can be appended to endogenous proteins to reveal their expression and even subcellular localization. But this is not without challenges: if fusion proteins are expressed as transgenes, they are prone to expression artifacts. A way to circumvent such issues is genetic tagging, where the fluorescent protein is inserted into the genome, but this comes at the expense of tissue-specificity. To overcome these limitations, we have adopted a split-fluorescent-protein system to achieve tissue-specific and endogenous protein labeling in zebrafish. This work is now <a href="https://pubmed.ncbi.nlm.nih.gov/38908500/">published</a>.</p>
+</article>
+<article class="research-card">
+<h3>Optogenetic control of gene expression in zebrafish</h3>
+<p>Inducible gene expression systems are valuable tools for studying biological processes. We collaborated with our neighbors, the <a href="https://stephaniewoo.ucmerced.edu/">Woo lab</a>, to improve the light-inducible TAEL system, which enables precise control of transgene expression in zebrafish. The performance of this system is discussed in this still recent <a href="https://pubmed.ncbi.nlm.nih.gov/33555975/">paper</a>.</p>
+</article>
+</div>
+
+</section>
+</main>
+
+  <footer>
+    <div class="wrap">© 2026 Materna Lab.</div>
+  </footer>
+</body>
+</html>

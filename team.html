@@ -1,0 +1,320 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>People | Materna Lab</title>
+
+  <style>
+    :root {
+      --background: #ffffff;
+      --text: #222222;
+      --muted: #666666;
+      --line: #e6e6e6;
+      --accent: #b38b00;
+      --accent-dark: #806400;
+      --max-width: 1120px;
+      --content-width: 720px;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--accent-dark);
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.16em;
+    }
+
+    .wrap {
+      width: min(100% - 2rem, var(--max-width));
+      margin: 0 auto;
+    }
+
+    .content-wrap {
+      width: min(100% - 2rem, var(--content-width));
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .site-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 2rem 0 1.5rem;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-family: "Avenir Next", Avenir, "Segoe UI", var(--font-sans);
+      font-size: clamp(2.3rem, 5vw, 4rem);
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+
+    .brand p {
+      margin: 0.45rem 0 0;
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      padding-bottom: 0.25rem;
+      border-bottom: 2px solid transparent;
+    }
+
+    nav a:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    section {
+      padding: 3rem 0;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 2rem;
+      font-size: clamp(1.7rem, 3vw, 2.45rem);
+      line-height: 1.12;
+      letter-spacing: -0.035em;
+    }
+
+    .publication-list {
+      padding-left: 1.5rem;
+    }
+
+    .publication-list li {
+      margin-bottom: 1.2rem;
+    }
+
+    .publication-links {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding: 1.5rem 0 2.5rem;
+      text-align: center;
+    }
+
+    @media (max-width: 850px) {
+      .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        justify-content: flex-start;
+      }
+    }
+  
+    .people-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.8rem 1.25rem;
+      margin: 1.25rem 0 3rem;
+    }
+
+    .person img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      height: auto;
+    }
+
+    .person h3 {
+      margin: 0.8rem 0 0.1rem;
+      font-size: 1.05rem;
+      line-height: 1.3;
+    }
+
+    .person p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.45;
+    }
+
+    .former-members {
+      margin: 1rem 0 0;
+      padding-left: 1.35rem;
+    }
+
+    .former-members li {
+      margin-bottom: 0.35rem;
+    }
+
+    @media (max-width: 760px) {
+      .people-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 520px) {
+      .people-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  
+    .people-section {
+      padding: 0 0 3rem;
+      margin: 0 0 3rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .people-section:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .people-section h3:first-child {
+      margin-top: 0;
+    }
+
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="wrap site-header">
+    <div class="brand">
+      <h1>Materna Lab</h1>
+      <p>Developmental &amp; Systems Biology</p>
+    </div>
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="team.html">People</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="content-wrap">
+      <h2>People</h2>
+
+      <div class="people-section">
+        <h3 id="current">Current Members</h3>
+
+        <div class="people-grid">
+        <article class="person">
+          <img src="images/stefan.jpg" alt="Stefan Materna">
+          <h3>Stefan Materna</h3>
+          <p>Principal Investigator</p>
+        </article>
+        <article class="person">
+          <img src="images/poshu.jpg" alt="Po-Shu Tu">
+          <h3>Po-Shu Tu</h3>
+          <p>Graduate Researcher</p>
+        </article>
+        <article class="person">
+          <img src="images/nimra.jpg" alt="Nimra Khurram">
+          <h3>Nimra Khurram</h3>
+          <p>Graduate Researcher</p>
+        </article>
+        <article class="person">
+          <img src="images/aaliyah.jpg" alt="Aaliyah Ruiz-Corral">
+          <h3>Aaliyah Ruiz-Corral</h3>
+          <p>Graduate Researcher</p>
+        </article>
+        <article class="person">
+          <img src="images/homer.jpg" alt="Avneet Kaur">
+          <h3>Avneet Kaur</h3>
+          <p>Undergraduate Researcher</p>
+        </article>
+        </div>
+      </div>
+
+      <div class="people-section">
+        <h3 id="alumni">Former Members</h3>
+
+      <ul class="former-members">
+        <li>Gloria Ligunas — Graduate Researcher</li>
+        <li>Roen Rawlings — Undergraduate Researcher</li>
+        <li>Devina Chavez — Lab Manager</li>
+        <li>Francisco Muniz — Undergraduate Researcher</li>
+        <li>Daniella Ramirez — Undergraduate Researcher</li>
+        <li>Baldemar Motomochi Cedillo — Undergraduate Researcher / <a href="https://ucleads.ucop.edu/">UC LEADS</a></li>
+        <li>Emma Gerlt — Junior Specialist</li>
+        <li>Rachel Kalthoff — Undergraduate Researcher / <a href="https://tusceb.com/">TUSCEB</a></li>
+        <li>Nathan Kamm — Undergraduate Researcher / <a href="https://tusceb.com/">TUSCEB</a></li>
+        <li>Brian Hartmann — Undergraduate Researcher</li>
+        <li>Aaron Filipich — Undergraduate Researcher</li>
+        <li>Dr. John Thompson — Postdoctoral Scholar</li>
+        <li>Edgar Zepeda — Undergraduate Researcher</li>
+        <li>Jesselynn LaBelle — Lab Manager</li>
+        <li>Christian Hernandez — Undergraduate Researcher</li>
+        <li>Alice Nguyen — Undergraduate Researcher</li>
+        <li>Cassandra Cardenas-Rocha — <a href="https://uroc.ucmerced.edu/suri">SURI</a> Researcher</li>
+      </ul>
+      </div>
+
+      <div class="people-section">
+        <h3 id="positions">Available Positions</h3>
+
+      <p>We are always looking for people that are excited to join the lab.</p>
+
+      <p>If you are interested in joining the lab as a <strong>graduate researcher</strong>, please reach out to Stefan to discuss options. Committing to a lab for a Ph.D. is an important decision and the sooner we get the conversation started the better. Our lab is part of the Quantitative and Systems Biology graduate program to which you must apply. Please check the <a href="https://qsb.ucmerced.edu/">QSB website</a> for details on the application process.</p>
+
+      <p>We are happy to have <strong>undergraduate researchers</strong> join the lab to conduct original research. If you are interested, please email Stefan and include a brief statement with what attracts you to the research we do, what you hope to learn, and what you may contribute to the lab. We will consider undergraduate students at every stage. However, you should have completed, or be enrolled in, Bio110.</p>
+
+      <p>If you are interested in joining as a <strong>postdoctoral researcher</strong>, please email Stefan with a CV, a summary of your research interests, and a brief statement of why you are interested in joining the lab. We are looking forward to hearing from you!</p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Materna Lab.</div>
+</footer>
+</body>
+</html>

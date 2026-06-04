@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Materna Lab | UC Merced</title>
+  <meta name="description" content="The Materna Lab at UC Merced studies developmental and systems biology using zebrafish to understand cell fate, morphogenesis, and tissue organization.">
+
+  <style>
+    :root {
+      --background: #ffffff;
+      --text: #222222;
+      --muted: #666666;
+      --line: #e6e6e6;
+      --soft-line: #f2f2f2;
+      --accent: #b38b00;
+      --accent-dark: #806400;
+      --max-width: 1120px;
+      --content-width: 720px;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--accent-dark);
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.16em;
+    }
+
+    a:hover, a:focus { color: var(--accent); }
+
+    .wrap {
+      width: min(100% - 2rem, var(--max-width));
+      margin: 0 auto;
+    }
+
+    .content-wrap {
+      width: min(100% - 2rem, var(--content-width));
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: #ffffff;
+    }
+
+    .site-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 2rem 0 1.5rem;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-family: "Avenir Next", Avenir, "Segoe UI", var(--font-sans);
+      font-size: clamp(2.3rem, 5vw, 4rem);
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+
+    .brand p {
+      margin: 0.45rem 0 0;
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      color: var(--text);
+      padding-bottom: 0.25rem;
+      border-bottom: 2px solid transparent;
+      text-decoration: none;
+    }
+
+    nav a:hover, nav a:focus {
+      color: var(--accent-dark);
+      border-bottom-color: var(--accent);
+      text-decoration: none;
+    }
+
+    main { padding: 0 0 4.5rem; }
+
+    section {
+      padding: 3rem 0;
+    }
+
+    section .content-wrap {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 3rem;
+    }
+
+    section:last-of-type .content-wrap {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .section-label {
+      margin: 0 0 0.75rem;
+      color: var(--accent-dark);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 0 0 1.15rem;
+      font-size: clamp(1.7rem, 3vw, 2.45rem);
+      line-height: 1.12;
+      letter-spacing: -0.035em;
+    }
+
+    h3 {
+      margin: 2rem 0 0.5rem;
+      font-size: 1.12rem;
+      line-height: 1.3;
+    }
+
+    p { margin: 0 0 1.1rem; }
+
+    .lede {
+      color: var(--muted);
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      line-height: 1.55;
+    }
+
+    figure {
+      margin: 2rem 0;
+    }
+
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    #welcome figure img {
+      width: 60%;
+      margin: 0 auto;
+    }
+
+
+    figcaption {
+      margin-top: 0.7rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.45;
+    }
+
+    .item-list article {
+      margin: 0 0 1.6rem;
+    }
+
+    .item-list h3 { margin-top: 0; }
+
+    .news-list {
+      margin: 1.5rem 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .news-list li {
+      display: grid;
+      grid-template-columns: 7.5rem 1fr;
+      gap: 1rem;
+      padding: 0.85rem 0;
+      border-top: 1px solid var(--soft-line);
+    }
+
+    .news-list li:first-child { border-top: none; }
+
+    .date {
+      color: var(--accent-dark);
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    address {
+      font-style: normal;
+      color: var(--muted);
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding: 1.5rem 0 2.5rem;
+      text-align: center;
+    }
+
+    @media (max-width: 850px) {
+      .site-header {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      nav ul { justify-content: flex-start; }
+
+      .news-list li {
+        grid-template-columns: 1fr;
+        gap: 0.1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap site-header">
+      <div class="brand">
+        <h1>Materna Lab</h1>
+        <p>Developmental &amp; Systems Biology</p>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#welcome">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+	  <li><a href="team.html">People</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+  <main>
+    <section id="welcome">
+      <div class="content-wrap">
+	<h2>Welcome to the Materna Lab</h2>
+        <p class="lede">We study how cells make decisions, coordinate their behavior, and build functional tissues during vertebrate development.</p>
+
+        <p>Our lab is interested in the genetic control mechanisms that underlie embryonic development. Specifically, we ask how cells adopt different fates and how those decisions lead to changes in cell shape, movement, and tissue organization.</p>
+
+        <p>These processes — specification and morphogenesis — act in concert, but how differentiating cells coordinate gene regulatory state with physical behavior remains a central question in developmental biology.</p>
+
+        <p>We use zebrafish embryos as a model system and combine quantitative imaging, molecular perturbation, genomics, and computational analysis to understand how robust developmental programs emerge.</p>
+
+        <figure>
+          <img src="images/z-fish-by-numbers.png" alt="Zebrafish embryo">
+        </figure>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="content-wrap">
+
+        <h2>Research focus</h2>
+
+        <div class="item-list">
+          <article>
+            <h3>Cell fate and patterning</h3>
+            <p>We investigate how embryonic cells interpret developmental signals and establish distinct transcriptional identities.</p>
+          </article>
+
+          <article>
+            <h3>Morphogenesis and migration</h3>
+            <p>We ask how gene regulatory programs are coupled to cell movement, tissue organization, and organ formation.</p>
+          </article>
+
+          <article>
+            <h3>Regulatory genomics</h3>
+            <p>We study cis-regulatory mechanisms that control developmental gene expression in space, time, and cell type.</p>
+          </article>
+        </div>
+
+        <p><a href="research.html">Read more about our research →</a></p>
+      </div>
+    </section>
+
+
+    <section id="teaching">
+  <div class="content-wrap">
+    <h2>Teaching</h2>
+    <p>
+      Teaching is an important part of our mission. We contribute to undergraduate and graduate education in developmental biology, molecular biology, genome engineering, and scientific research at UC Merced through the Biology Major and the Quantitative and Systems Biology programTeaching is an important part of our mission. Through the Biology major and the Quantitative and Systems Biology (QSB) graduate program, we contribute to education and training in developmental biology, molecular biology, genome engineering, and scientific research at UC Merced.
+    </p>    
+  </div>
+    </section>
+    
+
+<!--
+    <section id="links">
+      <div class="content-wrap">
+        <h2>Quick links</h2>
+
+        <div class="item-list">
+          <article>
+            <h3>People</h3>
+            <p>Meet the lab. <a href="team.html">Team page →</a></p>
+          </article>
+
+          <article>
+            <h3>Research</h3>
+            <p>Learn more about the questions that shape our work. <a href="research.html">Research page →</a></p>
+          </article>
+
+          <article>
+            <h3>Publications</h3>
+            <p>Papers and preprints from the lab. <a href="publications.html">Publications →</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+-->
+    <section id="affiliations">
+      <div class="content-wrap">
+        <h2>Affiliations</h2>
+        <div class="item-list">
+	  <p>
+	    We are part of the
+	    <a href="https://mcb.ucmerced.edu/">Molecular &amp; Cell Biology</a>
+	    Department at
+	    <a href="https://www.ucmerced.edu/">UC Merced</a>.
+	    We are affiliated with the
+	    <a href="https://qsb.ucmerced.edu/">Quantitative and Systems Biology</a>
+	    graduate program, the
+	    <a href="https://hsri.ucmerced.edu/">Health Sciences Research Institute</a>,
+	    and the
+	    <a href="https://ccbm.ucmerced.edu/">Center for Cellular and Biomolecular Machines</a>.
+	  </p>
+	  
+	</div>
+    </section>
+
+
+
+
+    
+    <!--
+    <section id="contact">
+      <div class="content-wrap">
+        <p class="section-label">Contact</p>
+        <h2>Contact</h2>
+
+        <p>Materna Lab<br>Department of Molecular &amp; Cell Biology<br>University of California, Merced</p>
+
+        <address>
+          <strong>Stefan C. Materna, Ph.D.</strong><br>
+          Assistant Professor<br>
+          Molecular &amp; Cell Biology<br>
+          UC Merced
+        </address>
+      </div>
+    </section>
+    -->
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Materna Lab.</div>
+  </footer>
+</body>
+</html>

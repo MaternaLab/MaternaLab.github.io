@@ -1,0 +1,210 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publications | Materna Lab</title>
+
+  <style>
+    :root {
+      --background: #ffffff;
+      --text: #222222;
+      --muted: #666666;
+      --line: #e6e6e6;
+      --accent: #b38b00;
+      --accent-dark: #806400;
+      --max-width: 1120px;
+      --content-width: 720px;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--accent-dark);
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.16em;
+    }
+
+    .wrap {
+      width: min(100% - 2rem, var(--max-width));
+      margin: 0 auto;
+    }
+
+    .content-wrap {
+      width: min(100% - 2rem, var(--content-width));
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .site-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 2rem 0 1.5rem;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-family: "Avenir Next", Avenir, "Segoe UI", var(--font-sans);
+      font-size: clamp(2.3rem, 5vw, 4rem);
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+
+    .brand p {
+      margin: 0.45rem 0 0;
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      padding-bottom: 0.25rem;
+      border-bottom: 2px solid transparent;
+    }
+
+    nav a:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    section {
+      padding: 3rem 0;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 2rem;
+      font-size: clamp(1.7rem, 3vw, 2.45rem);
+      line-height: 1.12;
+      letter-spacing: -0.035em;
+    }
+
+    .publication-list {
+      padding-left: 1.5rem;
+    }
+
+    .publication-list li {
+      margin-bottom: 1.2rem;
+    }
+
+    .publication-links {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding: 1.5rem 0 2.5rem;
+      text-align: center;
+    }
+
+    @media (max-width: 850px) {
+      .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        justify-content: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="wrap site-header">
+    <div class="brand">
+      <h1>Materna Lab</h1>
+      <p>Developmental &amp; Systems Biology</p>
+    </div>
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="team.html">People</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="content-wrap">
+      <h2>Publications</h2>
+
+      <ol class="publication-list">
+        <li>P. Tu, A.M. Ruiz-Corral, S. Woo, S.C Materna (2026). <strong>Met regulates endoderm migration in zebrafish.</strong> <a href="https://www.biorxiv.org/content/10.64898/2026.05.01.722050v1">bioRxiv</a>.</li>
+
+        <li>G.D. Ligunas, S.C. Materna (2026). <strong>Quantification of <i> eef1a1l1 </i> transcript in early zebrafish development.</strong> microPublication Biology, <a href="https://micropublication.org/journals/biology/micropub-biology-001944">Article</a>.</li>
+
+        <li>G.D. Ligunas, G.F. Paniagua, J. LaBelle, A. Ramos-Martinez, K. Shen, E.H. Gerlt, K. Aguilar, N. Nguyen, S.C. Materna, S. Woo (2024). <strong>Tissue-specific and endogenous protein labeling with split fluorescent proteins.</strong> Developmental Biology, 514:109-116. <a href="https://pubmed.ncbi.nlm.nih.gov/38908500/">PubMed</a>.</li>
+
+        <li>I. Zlatanova, F. Sun, R.S. Wu, X. Chen, B.H. Lau, P. Colombier, T. Sinha, B. Celona, S.M. Xu, S.C. Materna, G. Huang, B.L. Black (2023). <strong>An injury-responsive <i> mmp14b </i> enhancer is required for heart regeneration.</strong> Science Advances, PMID: 38019918. <a href="https://pubmed.ncbi.nlm.nih.gov/38019918/">PubMed</a>.</li>
+
+        <li>J. Labelle, A. Ramos-Martinez, K. Shen, L. Motta-Mena, K. Gardner, S.C. Materna, S. Woo (2021). <strong>TAEL 2.0: An improved optogenetic gene expression system for zebrafish.</strong> Zebrafish, 18:20-28. <a href="https://pubmed.ncbi.nlm.nih.gov/33555975/">PubMed</a>.</li>
+
+        <li>S.C. Materna, T. Sinha, R.M. Barnes, K.L. van Bueren, B.L. Black (2019). <strong>Cardiovascular development and survival require Mef2c function in the myocardial but not the endothelial lineage.</strong> Developmental Biology, 445:170-177. <a href="https://pubmed.ncbi.nlm.nih.gov/30521808/">PubMed</a>.</li>
+
+        <li>S.C. Materna and S. Woo (2018). <strong>Genetic Networks.</strong> Encyclopedia of Life Sciences, Wiley Online Library.</li>
+
+        <li>S.C Materna (2017). <strong>Using Morpholinos to probe gene networks in sea urchins.</strong> In: Morpholino Oligomers: Methods and Protocols (Springer, New York). <a href="https://pubmed.ncbi.nlm.nih.gov/28364236/">PubMed</a>.</li>
+
+        <li>R. Marín-Juez, M. Marass, S. Gauvrit, A. Rossi, S. Lai, S.C. Materna, B.L. Black, and D.Y.R. Stainier (2016). <strong>Fast revascularization of the injured area is essential to support zebrafish heart regeneration.</strong> Proceedings of the National Academy of Sciences, 113:11237-11242. <a href="https://pubmed.ncbi.nlm.nih.gov/27647901/">PubMed</a>.</li>
+
+        <li>A.S. Robinson*, S.C. Materna*, R.M. Barnes, S. De Val, S.M. Xu, and B.L. Black (2014). <strong>An arterial-specific enhancer of the human <i> endothelial converting enzyme 1 </i> (<i>ECE1</i>) gene is synergistically activated by Sox17, FoxC2, and Etv2.</strong> Developmental Biology, 395:379-389. <a href="https://pubmed.ncbi.nlm.nih.gov/25179465/">PubMed</a>.</li>
+      </ol>
+
+      <p class="publication-links">
+        <a href="https://pubmed.ncbi.nlm.nih.gov/?term=materna+sc%5Bau%5D">Full list of publications on PubMed →</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Materna Lab.</div>
+</footer>
+</body>
+</html>
