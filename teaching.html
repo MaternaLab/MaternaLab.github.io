@@ -1,0 +1,244 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Teaching | Materna Lab</title>
+<meta content="Teaching and mentoring in the Materna Lab at UC Merced, including courses in developmental biology, molecular biology, genome engineering, and gene expression analysis." name="description"/>
+<style>
+    :root {
+      --background: #ffffff;
+      --text: #222222;
+      --muted: #666666;
+      --line: #e6e6e6;
+      --soft-line: #f2f2f2;
+      --accent: #b38b00;
+      --accent-dark: #806400;
+      --max-width: 1120px;
+      --content-width: 720px;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--accent-dark);
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.16em;
+    }
+
+    a:hover, a:focus { color: var(--accent); }
+
+    .wrap {
+      width: min(100% - 2rem, var(--max-width));
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: #ffffff;
+    }
+
+    .site-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 2rem 0 1.5rem;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-family: "Avenir Next", Avenir, "Segoe UI", var(--font-sans);
+      font-size: clamp(2.3rem, 5vw, 4rem);
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+
+    .brand p {
+      margin: 0.45rem 0 0;
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      color: var(--text);
+      padding-bottom: 0.25rem;
+      border-bottom: 2px solid transparent;
+      text-decoration: none;
+    }
+
+    nav a:hover, nav a:focus {
+      color: var(--accent-dark);
+      border-bottom-color: var(--accent);
+      text-decoration: none;
+    }
+
+    .eyebrow, .section-label {
+      margin: 0 0 0.75rem;
+      color: var(--accent-dark);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.4rem, 7vw, 4rem);
+      line-height: 0.98;
+      letter-spacing: -0.06em;
+    }
+
+    .intro {
+      margin: 1.5rem 0 0;
+      color: var(--muted);
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      line-height: 1.55;
+    }
+
+    main {
+      width: min(100% - 2rem, var(--content-width));
+      margin: 0 auto;
+      padding: 0 0 4.5rem;
+    }
+
+    section {
+      padding: 3rem 0;
+      border-top: 1px solid var(--line);
+    }
+
+    section:first-of-type { border-top: 0; }
+
+    h2 {
+      margin: 0 0 1.15rem;
+      font-size: clamp(1.7rem, 3vw, 2.45rem);
+      line-height: 1.12;
+      letter-spacing: -0.035em;
+    }
+
+    h3 {
+      margin: 2rem 0 0.5rem;
+      font-size: 1.12rem;
+      line-height: 1.3;
+    }
+
+    p { margin: 0 0 1.1rem; }
+
+    figure {
+      margin: 2rem 0;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    figcaption {
+      margin-top: 0.7rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.45;
+    }
+
+    .research-list {
+      margin-top: 1.5rem;
+    }
+
+    .research-card {
+      margin: 0 0 1.6rem;
+    }
+
+    .research-card h3 { margin-top: 0; }
+    .research-card p:last-child { margin-bottom: 0; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding: 1.5rem 0 2.5rem;
+      text-align: center;
+    }
+
+    footer .wrap {
+      width: min(100% - 2rem, var(--max-width));
+    }
+
+    @media (max-width: 850px) {
+      .site-header {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      nav ul { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+<header>
+<div class="wrap site-header">
+<div class="brand">
+<h1>Materna Lab</h1>
+<p>Developmental &amp; Systems Biology</p>
+</div>
+<nav aria-label="Main navigation">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="research.html">Research</a></li>
+<li><a href="publications.html">Publications</a></li>
+<li><a href="team.html">People</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main><section aria-labelledby="teaching-heading" id="teaching">
+    
+    
+    <h2 id="teaching-heading">Courses and mentoring</h2><p>Members of the Materna Lab participate in teaching and mentoring across several courses in the
+<a href="https://naturalsciences.ucmerced.edu/academics/undergraduate-programs/majors/biological-sciences">Biology major</a> and the <a href="https://qsb.ucmerced.edu/">Quantitative and Systems Biology</a> graduate program. These courses introduce students to developmental biology, molecular biology, gene expression analysis, and genome engineering, while also providing opportunities for students to engage directly with experimental research.</p>
+    <h3>Undergraduate courses</h3><ul><li><strong>BIO 117:</strong> Advanced Molecular Biology (Spring 2027)</li><li><strong>BIO 118:</strong> Gene Editing Laboratory</li><li><strong>BIO 150:</strong> Embryos, Genes, and Development</li><li><strong>BIO 150L:</strong> Developmental Biology Laboratory</li><li><strong>BIO 195:</strong> Undergraduate Research</li></ul>
+    <h3>Graduate courses</h3><ul><li><strong>QSB 278:</strong> Gene Expression Analysis</li><li><strong>QSB 298:</strong> Developmental Biology and Neurobiology Journal Club</li></ul></section><section aria-labelledby="research-based-learning-heading" id="research-based-learning"><p class="section-label">Research-based learning</p>
+    <h2 id="research-based-learning-heading">Genome engineering in the classroom</h2>
+    <p>Research training is part of our core mission. While we welcome undergraduate researchers into the lab, space is necessarily limited. To make research more accessible, we developed the Gene Editing Laboratory (BIO 118) together with <a href="https://stephaniewoo.ucmerced.edu/">Prof. Stephanie Woo</a>. This course provides students with an authentic undergraduate research experience centered on genome engineering in zebrafish. Students design experiments, generate targeted mutations, and analyze resulting phenotypes using contemporary molecular and genetic approaches.
+Several students who participated in this course went on to become co-authors on peer-reviewed publications, including a study describing <a href="https://pubmed.ncbi.nlm.nih.gov/38908500/" target="_blank">tissue-specific endogenous protein labeling using split fluorescent proteins</a>.
+</p></p>
+  </section>
+  <section>
+    <figure><img alt="Sea urchin spawning demonstration in BIO 150" src="images/sea-urchin-spawning.jpg"/><figcaption>Always exciting: spawning a sea urchin in the Developmental Biology Laboratory (BIO 150L), Spring 2024.</figcaption></figure></section></main>
+<footer>
+<div class="wrap">© 2026 Materna Lab.</div>
+</footer>
+</body>
+</html>

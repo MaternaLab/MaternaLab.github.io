@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Stefan C. Materna | Materna Lab</title>
+<meta content="Bio page for Stefan C. Materna, Principal Investigator of the Materna Lab at UC Merced." name="description"/>
+<style>
+    :root {
+      --background: #ffffff;
+      --text: #222222;
+      --muted: #666666;
+      --line: #e6e6e6;
+      --soft-line: #f2f2f2;
+      --accent: #b38b00;
+      --accent-dark: #806400;
+      --max-width: 1120px;
+      --content-width: 720px;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--accent-dark);
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.16em;
+    }
+
+    a:hover, a:focus { color: var(--accent); }
+
+    .wrap {
+      width: min(100% - 2rem, var(--max-width));
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: #ffffff;
+    }
+
+    .site-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 2rem 0 1.5rem;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-family: "Avenir Next", Avenir, "Segoe UI", var(--font-sans);
+      font-size: clamp(2.3rem, 5vw, 4rem);
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+
+    .brand p {
+      margin: 0.45rem 0 0;
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      color: var(--text);
+      padding-bottom: 0.25rem;
+      border-bottom: 2px solid transparent;
+      text-decoration: none;
+    }
+
+    nav a:hover, nav a:focus {
+      color: var(--accent-dark);
+      border-bottom-color: var(--accent);
+      text-decoration: none;
+    }
+
+    .eyebrow, .section-label {
+      margin: 0 0 0.75rem;
+      color: var(--accent-dark);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.4rem, 7vw, 4rem);
+      line-height: 0.98;
+      letter-spacing: -0.06em;
+    }
+
+    .intro {
+      margin: 1.5rem 0 0;
+      color: var(--muted);
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      line-height: 1.55;
+    }
+
+    main {
+      width: min(100% - 2rem, var(--content-width));
+      margin: 0 auto;
+      padding: 0 0 4.5rem;
+    }
+
+    section {
+      padding: 3rem 0;
+      border-top: 1px solid var(--line);
+    }
+
+    section:first-of-type { border-top: 0; }
+
+    h2 {
+      margin: 0 0 1.15rem;
+      font-size: clamp(1.7rem, 3vw, 2.45rem);
+      line-height: 1.12;
+      letter-spacing: -0.035em;
+    }
+
+    h3 {
+      margin: 2rem 0 0.5rem;
+      font-size: 1.12rem;
+      line-height: 1.3;
+    }
+
+    p { margin: 0 0 1.1rem; }
+
+    figure {
+      margin: 2rem 0;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    figcaption {
+      margin-top: 0.7rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.45;
+    }
+
+    .research-list {
+      margin-top: 1.5rem;
+    }
+
+    .research-card {
+      margin: 0 0 1.6rem;
+    }
+
+    .research-card h3 { margin-top: 0; }
+    .research-card p:last-child { margin-bottom: 0; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding: 1.5rem 0 2.5rem;
+      text-align: center;
+    }
+
+    footer .wrap {
+      width: min(100% - 2rem, var(--max-width));
+    }
+
+    @media (max-width: 850px) {
+      .site-header {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      nav ul { justify-content: flex-start; }
+    }
+  
+
+    .bio-profile {
+      display: grid;
+      grid-template-columns: minmax(180px, 0.8fr) minmax(0, 1.7fr);
+      gap: 2rem;
+      align-items: start;
+      margin: 2rem 0 0;
+    }
+
+    .bio-profile figure {
+      margin: 0;
+    }
+
+    .bio-profile img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .bio-details h3 {
+      margin: 0 0 0.2rem;
+      font-size: 1.35rem;
+      line-height: 1.2;
+    }
+
+    .bio-role {
+      margin: 0 0 1rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .bio-contact {
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 700px) {
+      .bio-profile {
+        grid-template-columns: 1fr;
+      }
+
+      .bio-profile figure {
+        max-width: 340px;
+      }
+    }
+</style>
+</head>
+<body>
+<header>
+<div class="wrap site-header">
+<div class="brand">
+<h1>Materna Lab</h1>
+<p>Developmental &amp; Systems Biology</p>
+</div>
+<nav aria-label="Main navigation">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="research.html">Research</a></li>
+<li><a href="publications.html">Publications</a></li>
+<li><a href="team.html">People</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main>
+  <section aria-labelledby="stefan-heading" id="stefan-materna">
+    
+    <div class="bio-profile"><figure><img alt="Stefan C. Materna" src="images/stefan.jpg"/></figure><div class="bio-details"><h3>Stefan C. Materna, Ph.D.</h3><p class="bio-role">Principal Investigator</p>
+	<p>Molecular and developmental biology, gene regulation, and morphogenesis.</p>
+	<p class="bio-contact">smaterna@ucmerced.edu<br/>Office: SE1 350  ||  Lab: SE1 343</p></div></div></section><section aria-labelledby="bio-heading" id="bio">
+    <h3 id="bio-heading">Research background</h3><p>Stefan Materna is a molecular biologist whose research interests lie in understanding the control of complex cellular and molecular processes, such as those that shape the developing embryo. He earned a Diploma in Science from Canterbury University, New Zealand, followed by a Master’s in Cell Biology at the University of Freiburg, Germany, where he studied sporulation control in the slime mold <em>Physarum polycephalum</em>. He completed his Ph.D. in Biochemistry and Molecular Biophysics at the California Institute of Technology, working in Eric Davidson’s lab on the gene regulatory network underlying endomesoderm formation in sea urchins. For his postdoctoral training he joined the University of California San Francisco—first in the lab of Didier Stainier and later Brian Black. During this time, he studied how gene regulatory programs control cell identity and coordinate morphogenetic processes in vertebrate embryos.</p>
+<p>At UC Merced, the Materna Lab investigates how gene regulatory networks, signaling pathways, and cellular behaviors interact to drive embryonic development. Using zebrafish as a model system, the lab combines genetics, genomics, imaging, and quantitative approaches to study endoderm patterning, cell migration, left-right asymmetry, and the mechanisms by which cells acquire and execute distinct developmental fates. A central goal of the laboratory is to understand how regulatory information encoded in the genome is translated into the dynamic cellular behaviors that build a functional embryo.</p></section></main>
+<footer>
+<div class="wrap">© 2026 Materna Lab.</div>
+</footer>
+</body>
+</html>
